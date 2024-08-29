@@ -1,0 +1,56 @@
+/* Initial state: Positioned below */
+.transition-up {
+  transform: translateY(); /* Start 100% below its normal position */
+  transition: transform 1s ease-in-out; /* Transition over 1 second */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Final state: Move to its normal position */
+.transition-up.active {
+  transform: translateY(-100%); /* Move to its original position */
+  position: relative;
+}
+
+/* Example animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        /* position: relative */
+    }
+  }
+  
+  .animate {
+    animation: fadeIn 1s forwards;
+  }
+  
+  /* Example transition */
+  .transition {
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  .transition.active {
+    opacity: 1;
+  }
+
+div {
+
+    /* position: fixed; */
+    background-color: #fb6060;
+    text-align: left;
+    margin: 0 0 0 0 ;
+    /* width: 100%; */
+    /* top: 0;
+    left: 0; */
+
+    img {
+        margin-left: 1%;
+        margin-right: 30%;
+    }
+}

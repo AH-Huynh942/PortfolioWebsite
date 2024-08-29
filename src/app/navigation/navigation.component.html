@@ -1,0 +1,7 @@
+<div class="transition-up" [ngClass]="{'active':isScrollToTop}">
+
+    <img src="/star.png" alt="" width="25px" height="25px">
+    <span>
+        <app-navigation-button *ngFor="let navbtn of buttonNames" [button_name]=navbtn></app-navigation-button>
+    </span>
+</div>
