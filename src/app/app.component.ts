@@ -10,7 +10,7 @@ import { AboutComponent } from './about/about.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavigationComponent, NavigationButtonComponent, CommonModule, HomeComponent, AboutComponent],
+  imports: [RouterOutlet, NavigationComponent, NavigationButtonComponent, CommonModule, HomeComponent, AboutComponent, RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

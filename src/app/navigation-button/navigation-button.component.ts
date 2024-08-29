@@ -15,6 +15,6 @@ export class NavigationButtonComponent {
 
   onClick() {
     var route_name = this.button_name.toLowerCase()
-    this.router.navigate([`/${route_name}`])
+    this.router.navigate([`/${route_name  }`])
   }
 }
