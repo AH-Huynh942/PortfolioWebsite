@@ -1,0 +1,10 @@
+div, p {
+    background-color: peru;
+    border-color: black;
+    border-radius: 6px;
+    border-width: 1px;
+    border: solid;
+    padding: 5px;
+
+    text-align: center;
+}
